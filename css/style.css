@@ -156,6 +156,7 @@ h1,h2,h3,h4,h5,h6{
 }
 .header-content-left h3{
 	font-size: 20px;
+	margin-top:15%;
 }
 .header-content-left h1{
 	font-size: 30px;
