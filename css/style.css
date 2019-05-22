@@ -29,10 +29,16 @@ h1,h2,h3,h4,h5,h6{
 	width: 100%;
 	padding: 10px;
 	display: table;
-	background: rgba(24, 0, 26, 0.54);	
+	background:linear-gradient(#2B646E,#396871,#1E545D,#1A3D44,#474B4B);
 }
 .header-up{
-
+	position: fixed;
+	top: 0;
+	right:0;
+	left: 0;
+	margin:auto
+	height:100px;
+	background: linear-gradient(#2B646E,#396871)
 }
 .navbar-light .navbar-brand {
     color: #862121;
@@ -58,7 +64,7 @@ h1,h2,h3,h4,h5,h6{
 .header-content-left h3{
 	color: #862121;
 	font-size: 30px;
-	
+
 }
 .header-content-left h3:before{
 	content: '';
@@ -136,7 +142,9 @@ h1,h2,h3,h4,h5,h6{
 }
 
 /*header responsive*/
-@media screen and (min-width: 500px){
+
+
+@media screen and (min-width: 320px){
 
 .header-content-left{
 	float: none;
@@ -147,13 +155,34 @@ h1,h2,h3,h4,h5,h6{
 	width: 100%;
 }
 .header-content-left h3{
-	font-size: 15px;
+	font-size: 20px;
 }
 .header-content-left h1{
 	font-size: 30px;
 	display: block;
 	width: 100%;
-	
+
+}
+
+}
+@media screen and (min-width: 500px) and(max-width:1299px){
+
+.header-content-left{
+	float: none;
+	width: 100%;
+}
+.header-content-right{
+	float: none;
+	width: 100%;
+}
+.header-content-left h3{
+	font-size: 20px;
+}
+.header-content-left h1{
+	font-size: 30px;
+	display: block;
+	width: 100%;
+
 }
 
 }
@@ -198,6 +227,19 @@ h1,h2,h3,h4,h5,h6{
 /* about styles ends */
 
 /* respnsive about styles starts */
+@media screen and (min-width: 320px){
+	.about{
+		width: 80%;
+	}
+	.about h1{
+		font-size:25px;
+	}
+	.about p{
+		font-size: 15px;
+		font-family: tahoma;
+	}
+
+}
 @media screen and (min-width: 500px)and (max-width:1299px){
 	.about{
 		width: 80%;
@@ -241,7 +283,7 @@ h1,h2,h3,h4,h5,h6{
 	line-height: 1.3;
 	margin-bottom: 3.6rem;
 	color: #5F5F5F;
-	
+
 }
 .my-skills-right{
 	width: 50%;
@@ -307,9 +349,40 @@ h1,h2,h3,h4,h5,h6{
 /*my skills styles ends---*/
 
 /* respnsive my-skills styles starts */
+
+
+@media screen and (min-width: 320px){
+	.my-skills{
+
+	}
+	.my-skills h1{
+		font-size:25px;
+		font-weight: bold;
+	}
+	.my-skills h2{
+		font-size: 20px;
+	}
+	.my-skills-left{
+		float: none;
+		width: 100%;
+	}
+	.my-skills-right{
+		margin-top: 5%;
+		float: none;
+		width: 100%;
+		margin-left: 0;
+	}
+	.my-skills-right .progress{
+		margin-left: 0;
+	}
+	.my-skills-left-btn{
+	width: 100%;
+	margin-top: 20%;
+}
+}
 @media screen and (min-width: 500px)and (max-width:1000px){
 	.my-skills{
-		
+
 	}
 	.my-skills h1{
 		font-size:25px;
@@ -353,11 +426,11 @@ h1,h2,h3,h4,h5,h6{
 .work-experience-grid h1{
 	font-size: 20px;
 	font-weight: bolder;
-	
+
 }
 .work-experience-grid h2{
 	font-size: 20px;
-	
+
 }
 .work-experience-grid p{
 	font-size: 15px;
@@ -402,6 +475,22 @@ h1,h2,h3,h4,h5,h6{
 
 
 /* resonsive -experience-grid styles starts*/
+@media screen and (min-width: 320px){
+.work-experience-grid-left{
+	float: none;
+	width: 100%
+}
+.style-div{
+	width: 100%;
+	height: 2px;
+	margin: auto;
+	margin-bottom: 5%;
+}
+.work-experience-grid-right{
+	float: none;
+	width: 100%
+}
+}
 @media screen and (min-width: 500px)and (max-width:1299px){
 .work-experience-grid-left{
 	float: none;
@@ -473,12 +562,23 @@ font-size: 20px;
 
 }
 /* responsive latest project ends */
-.gal .image img {
-    width: 90%;
-    height: 173px;
-    border: 10px solid #FFF;
-    box-shadow: 0px 0px 5px #555;
+@media screen and (min-width: 320px){
+	.gal .image img {
+	    width: 90%;
+	    height: 140px;
+	    border: 10px solid #FFF;
+	    box-shadow: 0px 0px 5px #555;
+	}
 }
+@media screen and (min-width: 500px)and (max-width:1299px){
+	.gal .image img {
+	    width: 90%;
+	    height: 173px;
+	    border: 10px solid #FFF;
+	    box-shadow: 0px 0px 5px #555;
+	}
+}
+
 /*responsive gallery starts */
 
 
@@ -598,11 +698,11 @@ q {font-style: italic;}
 	font-size: 25px;
 	font-weight: bolder;
 	width: 80%;
-	
+
 }
 .journal-experience-grid h2{
 	font-size: 20px;
-	
+
 }
 .jurnal-experience-grid p{
 	font-size: 15px;
@@ -652,6 +752,36 @@ q {font-style: italic;}
 /* journal ends */
 
 /* responsive journal starts*/
+@media screen and (min-width: 320px){
+	.journal{
+		width: 60%;
+		margin: auto;
+		text-align: center;
+		margin-top: 5%;
+	}
+	.journal>h1{
+		font-size: 20px;
+	}
+	.journal p{
+		font-size: 18px;
+	}
+	.journal-experience-grid-left{
+		width: 100%;
+		float: none;
+	}
+	.journal-experience-grid-left h1{
+		font-size: 20px;
+	}
+	.journal-experience-grid-right h1{
+		font-size: 20px;
+	}
+	.journal-experience-grid-right{
+		width: 100%;
+		float: none;
+		margin-left: 0;
+	}
+
+}
 @media screen and (min-width: 500px)and (max-width:1299px){
 .journal{
 	width: 60%;
@@ -702,6 +832,21 @@ q {font-style: italic;}
 /* dreamhost style ends */
 
 /* responsive dreamhost style starts */
+@media screen and (min-width: 320px){
+	.dreamhost h1{
+		font-size: 20px;
+	}
+	.dreamhost h5{
+		font-size: 18px;
+	}
+	.dreamhost button{
+		width: 100%!important;
+		padding: 8px;
+		font-size: 20px;
+
+	}
+
+}
 @media screen and (min-width: 500px)and (max-width:1299px){
 	.dreamhost button{
 		width: 100%!important;
@@ -736,7 +881,7 @@ q {font-style: italic;}
 	width: 50%;
 	text-align: center;
 	margin:auto;
-	
+
 }
 .contact-form-wrap{
 	width: 60%;
@@ -762,7 +907,7 @@ q {font-style: italic;}
 	border-top: 0px;
 	padding-left: 10px;
 	border-bottom: 1px solid #ddd;
-	
+
 }
 .contact-form-left button{
 	background: #862121;
@@ -777,7 +922,7 @@ q {font-style: italic;}
 }
 .contact-form-left textarea:hover{
 	border-bottom: 1px solid black;
-	
+
 }
 .contact-form-right{
 	float: left;
@@ -787,11 +932,11 @@ q {font-style: italic;}
 .contact-form-right h1{
 	font-size: 15px;
 	font-weight: bolder;
-	
+
 }
 .contact-form-right h2{
-	font-size: 20px;
-	
+	font-size: 13px;
+
 }
 .email,.address{
 	margin-top: 5%;
@@ -805,6 +950,41 @@ q {font-style: italic;}
 /* contact-form styles ends */
 
 /* responsive contact-form styles starts */
+@media screen and (min-width: 320px){
+	.contact-form{
+		margin-top: 5%;
+	}
+	.contact-form-right h1{
+
+	}
+	.contact-form-right h2{
+		font-size: 20px;
+	}
+	.contact-form-post h5{
+		font-size: 20px;
+	}
+	.contact-form-post h1{
+		font-size: 30px;
+	}
+	.contact-form-post p{
+		font-size: 15px;
+		font-family: tahoma;
+		text-align: justify;
+	}
+	.contact-form-left{
+		float: none;
+		width: 100%;
+	}
+	.contact-form-left textarea{
+		height: 70px;
+	}
+	.contact-form-right{
+		float: none;
+		text-align: left;
+		width: 100%;
+		margin-left: 0px;
+	}
+}
 @media screen and (min-width: 500px)and (max-width:1299px){
 .contact-form{
 	margin-top: 5%;
@@ -857,7 +1037,7 @@ q {font-style: italic;}
 .footer li a{
 	color: #fff;
 	margin-right: 20px;
-	
+
 }
 .footer li a:hover{
 	text-decoration: none;
@@ -880,7 +1060,6 @@ q {font-style: italic;}
 /*footer styles ends---*/
 
 /* responsive footer-styles starts */
-
 @media screen and (min-width: 500px)and (max-width:1299px){
 
 .footer{
@@ -889,11 +1068,27 @@ q {font-style: italic;}
 .footer li a{
 	color: #fff;
 	margin-right: 15px;
-	
+
 }
 .footer li a span{
 	font-size: 15px;
 	padding-right: 2px;
+}
+}
+@media screen and (min-width: 320px){
+
+.footer{
+	width: 100%;
+}
+.footer li a{
+	color: #fff;
+	margin-right: 15px;
+
+}
+.footer li a span{
+	font-size: 15px;
+	padding-right: 2px;
+	border:0px;
 }
 }
 
