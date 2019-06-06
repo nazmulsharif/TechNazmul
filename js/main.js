@@ -1,7 +1,7 @@
 /*prettyPhoto starts*/
 
 
-$('.gal a').prettyPhoto();
+
 
 /*prettyPhoto ends*/
 

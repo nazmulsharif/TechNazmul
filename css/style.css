@@ -29,14 +29,28 @@ h1,h2,h3,h4,h5,h6{
 	width: 100%;
 	padding: 10px;
 	display: table;
-	background:linear-gradient(#2B646E,#396871,#1E545D,#1A3D44,#474B4B);
+	
+}
+.header-area{
+	background: url('../images/8.jpg');
+	background-size: cover;
+	background-size: 100% 100%;
+	background-attachment: fixed;
+	position: relative;
+}
+.dark-overlay{
+	background: rgba(0, 0, 0, .7);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
 }
 .header-up{
 	position: fixed;
 	top: 0;
 	right:0;
 	left: 0;
-	margin:auto
+	margin:auto;
 	height:100px;
 	background: linear-gradient(#2B646E,#396871)
 }
@@ -62,7 +76,7 @@ h1,h2,h3,h4,h5,h6{
 	float: left;
 }
 .header-content-left h3{
-	color: #862121;
+	color: #fff;
 	font-size: 30px;
 
 }
