@@ -75,6 +75,9 @@ h1,h2,h3,h4,h5,h6{
 	color: #fff;
 	float: left;
 }
+.header-content-left h1{
+	color: #fff;
+}
 .header-content-left h3{
 	color: #fff;
 	font-size: 30px;
